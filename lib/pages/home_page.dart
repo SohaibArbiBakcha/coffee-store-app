@@ -1,3 +1,5 @@
+import '../components/buttom_nav_bar.dart';
+
 import '../const.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +15,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
+      bottomNavigationBar: ButtomNavBar(),
     );
   }
 }
