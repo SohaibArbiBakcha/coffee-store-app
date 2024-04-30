@@ -10,8 +10,28 @@ class ShopPage extends StatefulWidget {
 class _ShopPageState extends State<ShopPage> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Shop'),
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.all(25.0),
+        child: Column(
+          children: [
+            //heading message
+            const Text(
+              "How would you like your coffee?",
+              style: TextStyle(fontSize: 20),
+            ),
+
+            SizedBox(height: 25),
+
+            //list of coffee to buy
+            Expanded(child: ListView.builder(itemBuilder: (context, index) {
+              // get individual coffee
+
+              // return tje tile for this coffee
+            }))
+          ],
+        ),
+      ),
     );
   }
 }
